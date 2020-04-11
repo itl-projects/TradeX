@@ -68,6 +68,7 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">
 
@@ -80,13 +81,24 @@
                 android:id="@+id/card"
                 android:layout_width="359dp"
                 android:layout_height="222dp"
-                android:layout_marginBottom="48dp"
                 android:background="#F6F0F1"
                 app:cardBackgroundColor="#FAF2F2"
                 app:cardMaxElevation="@dimen/cardview_compat_inset_shadow"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toStartOf="parent">
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <Button
+                    android:id="@+id/veributton"
+                    android:layout_width="213dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginBottom="10dp"
+                    android:background="@drawable/carddesign"
+                    android:backgroundTint="@color/slidercolor"
+                    android:onClick="Continue"
+                    android:text="continue" />
 
                 <LinearLayout
                     android:id="@+id/linearLayout2"
@@ -116,17 +128,6 @@
                         />
 
                 </LinearLayout>
-
-                <Button
-                    android:id="@+id/veributton"
-                    android:layout_width="213dp"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center"
-                    android:layout_marginBottom="10dp"
-                    android:background="@drawable/carddesign"
-                    android:backgroundTint="@color/slidercolor"
-                    android:text="continue"
-                    />
 
 
             </androidx.cardview.widget.CardView>

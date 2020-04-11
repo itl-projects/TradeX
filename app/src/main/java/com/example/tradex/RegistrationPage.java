@@ -11,6 +11,8 @@ import android.os.CountDownTimer;
 import android.text.SpannableString;
 import android.text.Spanned;
 import android.text.style.ForegroundColorSpan;
+import android.view.View;
+import android.widget.Button;
 import android.widget.TextView;
 import android.widget.Toast;
 import com.google.android.gms.tasks.OnCompleteListener;
@@ -29,6 +31,7 @@ public class RegistrationPage extends AppCompatActivity {
     private static final long TIMER_DURATION = 30000L;
     private static final long TIMER_INTERVAL = 1000L;
     public SharedPreferences sharedPreferences;
+
 
     private CountDownTimer mCountDownTimer;
 
@@ -53,7 +56,7 @@ public class RegistrationPage extends AppCompatActivity {
                 SpannableString spannableString=new SpannableString(ss);
                 ForegroundColorSpan foregroundColorSpan=new ForegroundColorSpan(Color.GREEN);
                 spannableString.setSpan(foregroundColorSpan,15,17, Spanned.SPAN_EXCLUSIVE_EXCLUSIVE);
-                textView.setText(spannableString);
+                //textView.setText(spannableString);
                 mTimeRemaining = millisUntilFinished;
             }
 
@@ -103,5 +106,10 @@ public class RegistrationPage extends AppCompatActivity {
                         }
                     });
         }
+    }
+    public void Continue(View view) {
+        Intent intent=new Intent(RegistrationPage.this,MobileAuthentication.class);
+        startActivity(intent);
+        finish();
     }
 }

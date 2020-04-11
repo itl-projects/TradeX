@@ -76,7 +76,8 @@
                 app:layout_constraintHorizontal_bias="0.498"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/mobilenumber"
-                app:layout_constraintVertical_bias="0.772" />
+                app:layout_constraintVertical_bias="0.772"
+                android:onClick="ContinueMobile"/>
 
             <EditText
                 android:id="@+id/mobilenumber"
@@ -84,6 +85,7 @@
                 android:layout_height="42dp"
                 android:background="@drawable/carddesign"
                 android:gravity="center"
+                android:drawableRight="@drawable/usericon"
                 android:hint="mobile number"
 
                 android:textColorHint="#151414"

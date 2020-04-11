@@ -69,20 +69,20 @@
 
             <ImageView
                 android:id="@+id/corner1"
-                android:layout_width="66dp"
-                android:layout_height="67dp"
+                android:layout_width="51dp"
+                android:layout_height="53dp"
                 android:layout_alignParentStart="true"
                 android:layout_alignParentLeft="true"
                 android:layout_alignParentTop="true"
                 android:layout_alignParentEnd="true"
                 android:layout_alignParentRight="true"
                 android:layout_alignParentBottom="true"
-                android:layout_marginStart="248dp"
-                android:layout_marginLeft="248dp"
-                android:layout_marginTop="11dp"
-                android:layout_marginEnd="97dp"
-                android:layout_marginRight="97dp"
-                android:layout_marginBottom="141dp"
+                android:layout_marginStart="266dp"
+                android:layout_marginLeft="266dp"
+                android:layout_marginTop="6dp"
+                android:layout_marginEnd="94dp"
+                android:layout_marginRight="94dp"
+                android:layout_marginBottom="160dp"
                 android:background="@drawable/round_shape" />
 
 
@@ -170,8 +170,8 @@
                     android:layout_marginEnd="263dp"
                     android:layout_marginRight="263dp"
                     android:layout_marginBottom="78dp"
-                    android:text="Remember me"
                     android:checked="true"
+                    android:text="Remember me"
                     android:textColor="#030404" />
 
                 <Button
@@ -181,12 +181,15 @@
                     android:layout_above="@+id/sign"
                     android:layout_alignParentStart="true"
                     android:layout_alignParentLeft="true"
+                    android:layout_alignParentTop="true"
                     android:layout_alignParentEnd="true"
                     android:layout_alignParentRight="true"
                     android:layout_marginStart="302dp"
                     android:layout_marginLeft="302dp"
+                    android:layout_marginTop="0dp"
                     android:layout_marginBottom="9dp"
                     android:background="@drawable/login_button_shape"
+                    android:onClick="loginButton"
                     android:text="LOGIN" />
 
                 <Button
@@ -202,6 +205,7 @@
                     android:layout_marginLeft="304dp"
                     android:layout_marginBottom="5dp"
                     android:background="@drawable/login_button_shape"
+                    android:onClick="signUpButton"
                     android:text="SIGN UP" />
 
             </RelativeLayout>
@@ -225,7 +229,7 @@
             <FrameLayout
                 android:id="@+id/frame2"
                 android:layout_width="wrap_content"
-                android:layout_height="88dp"
+                android:layout_height="78dp"
                 android:layout_alignParentStart="true"
                 android:layout_alignParentLeft="true"
                 android:layout_alignParentTop="true"
@@ -234,7 +238,7 @@
                 android:layout_alignParentBottom="true"
                 android:layout_marginStart="0dp"
                 android:layout_marginLeft="0dp"
-                android:layout_marginTop="58dp"
+                android:layout_marginTop="68dp"
                 android:layout_marginEnd="311dp"
                 android:layout_marginRight="311dp"
                 android:layout_marginBottom="0dp">
@@ -258,32 +262,42 @@
                 android:layout_marginRight="206dp"
                 android:layout_marginBottom="25dp"
                 android:text="Also Login with"
+                android:id="@+id/loginwith"
                 android:textColor="#030404"
                 android:textSize="15sp"/>
 
             <Button
+                android:id="@+id/google"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
                 android:layout_alignParentEnd="true"
                 android:layout_alignParentRight="true"
                 android:layout_alignParentBottom="true"
+                android:layout_marginStart="13dp"
+                android:layout_marginLeft="13dp"
+                android:layout_marginTop="89dp"
                 android:layout_marginEnd="105dp"
                 android:layout_marginRight="105dp"
-                android:id="@+id/google"
-                android:layout_marginBottom="10dp">
+                android:layout_marginBottom="10dp"
+
+                android:onClick="google">
 
             </Button>
 
             <Button
+                android:id="@+id/fb"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
                 android:layout_alignParentEnd="true"
                 android:layout_alignParentRight="true"
                 android:layout_alignParentBottom="true"
+                android:layout_marginTop="87dp"
                 android:layout_marginEnd="10dp"
                 android:layout_marginRight="10dp"
                 android:layout_marginBottom="11dp"
-                android:id="@+id/fb">
+                android:onClick="facebook">
 
             </Button>
 

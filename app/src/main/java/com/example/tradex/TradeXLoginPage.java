@@ -15,25 +15,25 @@ public class TradeXLoginPage extends AppCompatActivity {
     }
 
     public void signUpButton(View view) {
-        Intent intent=new Intent(TradeXLoginPage.this,Home.class);
+        Intent intent=new Intent(TradeXLoginPage.this,RegistrationPage.class);
         startActivity(intent);
         finish();
     }
 
     public void loginButton(View view) {
-        Intent intent=new Intent(TradeXLoginPage.this,Home.class);
+        Intent intent=new Intent(TradeXLoginPage.this,RegistrationPage.class);
         startActivity(intent);
         finish();
     }
 
     public void facebook(View view) {
-        Intent intent=new Intent(TradeXLoginPage.this,Home.class);
+        Intent intent=new Intent(TradeXLoginPage.this,RegistrationPage.class);
         startActivity(intent);
         finish();
     }
 
     public void google(View view) {
-        Intent intent=new Intent(TradeXLoginPage.this,Home.class);
+        Intent intent=new Intent(TradeXLoginPage.this,RegistrationPage.class);
         startActivity(intent);
         finish();
     }
