@@ -51,7 +51,7 @@ public class IntroSlider extends AppCompatActivity {
            @Override
            public void onClick(View view) {
 
-               Intent intent=new Intent(IntroSlider.this,Home.class);
+               Intent intent=new Intent(IntroSlider.this,TradeXLoginPage.class);
                startActivity(intent);
                finish();
            }
