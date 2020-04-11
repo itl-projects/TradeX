@@ -8,50 +8,86 @@
     android:orientation="vertical"
     tools:context=".MainActivity"
     >
+
     <com.google.android.material.appbar.AppBarLayout
         android:id="@+id/appBarLayout"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        >
+        app:layout_constraintVertical_bias="0.0">
 
         <com.google.android.material.appbar.MaterialToolbar
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
             app:title="TradeX"
-            app:titleTextColor="@color/buttonText"/>
+            app:titleTextColor="@color/buttonText" />
     </com.google.android.material.appbar.AppBarLayout>
 
     <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayout"
         android:layout_width="0dp"
         android:layout_height="0dp"
-        app:layout_constraintBottom_toTopOf="@+id/relativeLayout"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/appBarLayout">
 
         <FrameLayout
             android:id="@+id/frmlyout"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-
-            >
-
+            android:layout_width="406dp"
+            android:layout_height="622dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.056">
 
         </FrameLayout>
     </androidx.constraintlayout.widget.ConstraintLayout>
+<!--        <FrameLayout-->
+<!--            android:id="@+id/relativeLayout"-->
+<!--            android:layout_width="405dp"-->
+<!--            android:layout_height="49dp"-->
+
+<!--            app:layout_constraintBottom_toBottomOf="parent"-->
+<!--            app:layout_constraintEnd_toEndOf="parent"-->
+<!--            app:layout_constraintStart_toStartOf="parent"-->
+<!--            app:layout_constraintTop_toTopOf="parent"-->
+<!--            app:layout_constraintVertical_bias="0.998">-->
 
 
+<!--            <com.google.android.bottomnavigation.BottomNavigationView-->
+<!--                android:id="@+id/nav_view"-->
+<!--                style="@style/Widget.MaterialComponents.BottomNavigationView"-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="match_parent"-->
+<!--                app:menu="@menu/nav_menu"-->
+<!--                android:layout_alignParentTop="true"-->
+<!--                android:layout_alignParentEnd="true"-->
+<!--                android:layout_alignParentRight="true"-->
+<!--                android:layout_alignParentBottom="true"-->
+<!--                android:layout_marginTop="0dp"-->
+<!--                android:layout_marginEnd="0dp"-->
+<!--                android:layout_marginRight="0dp"-->
+<!--                android:layout_marginBottom="0dp"-->
+<!--                android:background="#F3EFEF"-->
+<!--                android:fitsSystemWindows="true"-->
+<!--                app:itemTextColor="@color/slidercolor"-->
+<!--                app:itemTextAppearanceActive="@color/slidercolor"-->
+<!--                >-->
 
-    <!--    </LinearLayout>-->
-
-    <RelativeLayout
+<!--            </com.google.android.bottomnavigation.BottomNavigationView>-->
+<!--        </FrameLayout>-->
+    <FrameLayout
         android:id="@+id/relativeLayout"
-        android:layout_width="408dp"
-        android:layout_height="42dp"
+        android:layout_width="402dp"
+        android:layout_height="58dp"
+        android:gravity="bottom"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -64,13 +100,11 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:background="#fff"
-            app:menu="@menu/nav_menu"
-            android:textAlignment="center"
-            android:gravity="center_horizontal">
+            app:labelVisibilityMode="selected"
+            app:menu="@menu/nav_menu">
 
         </com.google.android.material.bottomnavigation.BottomNavigationView>
-    </RelativeLayout>
-
+    </FrameLayout>
 
 
 

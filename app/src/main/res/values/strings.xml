@@ -8,7 +8,6 @@
     <string name="Tradex">Trade</string>
     <string name="smathphn">Login with Mobile Number</string>
     <string name="text">Enter your mobile number we will sent you OTP to verify</string>
-    <string name="dummy">Lorem Ipsum is simply dummy text of the printing and typesetting industry.Lorem Ipsum
-    has been the Industry's standard dummy text ever since the 1500s.</string>
+   <string name="dummy">Lorem Ipsum is simply dummy text of the printing and typesetting industry Lorem Ipsum has been the Industrys standard dummy text ever since the 1500s</string>
 
 </resources>
