@@ -21,7 +21,11 @@
 
             <FrameLayout
                 android:layout_width="180dp"
-                android:layout_height="170dp">
+                android:layout_height="170dp"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginEnd="3dp"
+                android:layout_marginRight="3dp">
 
                 <ImageView
                     android:layout_width="100dp"
@@ -128,14 +132,40 @@
             android:layout_height="0dp"
             android:layout_weight=".8">
 
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentBottom="true"
+                android:layout_marginEnd="206dp"
+                android:layout_marginRight="206dp"
+                android:layout_marginBottom="25dp"
+                android:text="Also Login with"
+                android:textColor="#030404"
+                android:textSize="15sp"/>
+
             <Button
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content">
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentBottom="true"
+                android:layout_marginEnd="105dp"
+                android:layout_marginRight="105dp"
+                android:layout_marginBottom="10dp">
 
             </Button>
+
             <Button
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content">
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentBottom="true"
+                android:layout_marginEnd="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="11dp">
 
             </Button>
 
