@@ -83,7 +83,7 @@
 
 <!--            </com.google.android.bottomnavigation.BottomNavigationView>-->
 <!--        </FrameLayout>-->
-    <FrameLayout
+    <RelativeLayout
         android:id="@+id/relativeLayout"
         android:layout_width="402dp"
         android:layout_height="58dp"
@@ -104,7 +104,7 @@
             app:menu="@menu/nav_menu">
 
         </com.google.android.material.bottomnavigation.BottomNavigationView>
-    </FrameLayout>
+    </RelativeLayout>
 
 
 
