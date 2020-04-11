@@ -3,29 +3,47 @@
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:background="@color/slidercolor"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
     <ImageView
         android:id="@+id/slder1"
-        android:layout_width="259dp"
-        android:layout_height="286dp"
-        android:src="@drawable/bitcoin"
+        android:layout_width="258dp"
+        android:layout_height="233dp"
+        android:src="@drawable/retirementicon"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.44"
+        app:layout_constraintHorizontal_bias="0.437"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.233" />
+        app:layout_constraintVertical_bias="0.156" />
 
     <TextView
         android:id="@+id/slider1text"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="jbdskvbjwdv dskhfwljv;HFLKWHfnl"
+        android:paddingLeft="10dp"
+        android:text="Title"
+        android:textSize="50dp"
         app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/slder1"
-        app:layout_constraintVertical_bias="0.052"
-        tools:layout_editor_absoluteX="0dp" />
+        app:layout_constraintVertical_bias="0.053" />
+
+    <TextView
+        android:id="@+id/txt"
+        android:layout_width="397dp"
+        android:layout_height="136dp"
+        android:paddingLeft="10dp"
+        android:text="@string/dummy"
+        android:textSize="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.39"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/slider1text"
+        app:layout_constraintVertical_bias="0.043" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

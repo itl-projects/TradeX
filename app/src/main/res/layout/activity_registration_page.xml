@@ -8,55 +8,57 @@
     tools:context=".RegistrationPage">
 
 
-
     <LinearLayout
+        android:id="@+id/linearLayout3"
         android:layout_width="match_parent"
         android:layout_height="300dp"
-        app:layout_constraintTop_toTopOf="parent"
-        android:orientation="horizontal">
+        android:orientation="horizontal"
+        app:layout_constraintTop_toTopOf="parent">
+
         <androidx.constraintlayout.widget.ConstraintLayout
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            >
+            android:layout_height="match_parent">
 
 
             <ImageView
                 android:id="@+id/imageView5"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:src="@drawable/omdg"
+                android:layout_width="154dp"
+                android:layout_height="116dp"
+                android:src="@drawable/correct"
+                app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintHorizontal_bias="0.498"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/varicode" />
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.244" />
 
             <TextView
                 android:id="@+id/enter"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:fontFamily="serif"
+                android:gravity="center_horizontal"
                 android:text="Verification"
                 android:textAlignment="center"
                 android:textColor="#E1020202"
                 android:textSize="12pt"
                 app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/imageView5"
 
-                tools:layout_editor_absoluteX="0dp"
-                android:gravity="center_horizontal" />
+                app:layout_constraintTop_toBottomOf="@+id/imageView5"
+                tools:layout_editor_absoluteX="0dp" />
 
             <TextView
                 android:id="@+id/txt"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
                 android:text="Enter OTP code sent to your number"
                 android:textAlignment="center"
                 android:textColor="#3C403F"
                 android:textSize="5pt"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/enter"
-                tools:layout_editor_absoluteX="0dp"
-                android:gravity="center_horizontal" />
+                tools:layout_editor_absoluteX="0dp" />
 
 
         </androidx.constraintlayout.widget.ConstraintLayout>
@@ -65,7 +67,9 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        app:layout_constraintBottom_toBottomOf="parent">
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
 
         <androidx.constraintlayout.widget.ConstraintLayout
             android:layout_width="match_parent"
@@ -113,20 +117,16 @@
 
                 </LinearLayout>
 
-                <ProgressBar
-                    android:id="@+id/progressBar"
-                    style="?android:attr/progressBarStyle"
-                    android:layout_width="70dp"
-                    android:layout_height="67dp"
-                    android:layout_alignParentStart="true"
-                    android:layout_alignParentLeft="true"
-                    android:layout_alignParentEnd="true"
-                    android:layout_alignParentRight="true"
-                    android:layout_marginBottom="52dp"
-                    app:layout_constraintBottom_toBottomOf="parent"
-                    app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintHorizontal_bias="0.498"
-                    app:layout_constraintStart_toStartOf="parent" />
+                <Button
+                    android:id="@+id/veributton"
+                    android:layout_width="213dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginBottom="10dp"
+                    android:background="@drawable/carddesign"
+                    android:backgroundTint="@color/slidercolor"
+                    android:text="continue"
+                    />
 
 
             </androidx.cardview.widget.CardView>

@@ -3,14 +3,15 @@
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:background="@color/slidercolor"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
     <ImageView
         android:id="@+id/slder1"
-        android:layout_width="259dp"
-        android:layout_height="286dp"
-        android:src="@drawable/bitcoin"
+        android:layout_width="242dp"
+        android:layout_height="223dp"
+        android:src="@drawable/monitoring"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -21,10 +22,26 @@
         android:id="@+id/slider1text"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="jbdskvbjwdv dskhfwljv;HFLKWHfnl"
+        android:paddingLeft="10dp"
+        android:text="Title"
+        android:textSize="50dp"
         app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/slder1"
-        app:layout_constraintVertical_bias="0.047"
-        tools:layout_editor_absoluteX="16dp" />
+        app:layout_constraintVertical_bias="0.047" />
+
+    <TextView
+        android:layout_width="409dp"
+        android:layout_height="141dp"
+        android:paddingLeft="10dp"
+        android:text="@string/dummy"
+        android:textSize="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.095"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/slider1text"
+        app:layout_constraintVertical_bias="0.031" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

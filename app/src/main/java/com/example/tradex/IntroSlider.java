@@ -4,8 +4,11 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.content.ContextCompat;
 import androidx.viewpager.widget.ViewPager;
 
+import android.content.Intent;
 import android.os.Bundle;
+import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
 
@@ -15,6 +18,7 @@ public class IntroSlider extends AppCompatActivity {
     public MPagerAdapter Mpager;
     private LinearLayout dots_layout;
     private ImageView[] dots;
+    private Button Skip;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -24,6 +28,8 @@ public class IntroSlider extends AppCompatActivity {
         Mpager=new MPagerAdapter(layouts,this);
         viewPager.setAdapter(Mpager);
         dots_layout=findViewById(R.id.linear);
+        Skip=findViewById(R.id.skip);
+
         creaetDots(0);
         viewPager.addOnPageChangeListener(new ViewPager.OnPageChangeListener() {
             @Override
@@ -41,7 +47,17 @@ public class IntroSlider extends AppCompatActivity {
 
             }
         });
+       Skip.setOnClickListener(new View.OnClickListener() {
+           @Override
+           public void onClick(View view) {
+
+               Intent intent=new Intent(IntroSlider.this,Home.class);
+               startActivity(intent);
+               finish();
+           }
+       });
     }
+
     public void creaetDots(int position)
     {
         if(dots_layout!=null)

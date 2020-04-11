@@ -2,14 +2,21 @@
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
     <item
         android:id="@+id/home"
-        android:title="home"
+        android:title="Home"
+        android:icon=""
 
         />
     <item
         android:id="@+id/activity"
-        android:title="activity" />
+        android:title="Markets" />
     <item
         android:id="@+id/profile_pic"
-        android:title="Profile" />
+        android:title="Trades" />
+    <item
+        android:id="@+id/funds"
+        android:title="Funds"/>
+    <item
+        android:id="@+id/users"
+        android:title="Users"/>
 
 </menu>
