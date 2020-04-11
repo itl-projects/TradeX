@@ -67,10 +67,12 @@
 
                 <EditText
                     android:layout_width="match_parent"
-                    android:layout_height="match_parent"/>
+                    android:layout_height="match_parent"
+                    android:hint="User Name"/>
                 <EditText
                     android:layout_width="match_parent"
-                    android:layout_height="match_parent"/>
+                    android:layout_height="match_parent"
+                    android:hint="Password"/>
 
 
             </LinearLayout>
@@ -99,22 +101,24 @@
                     android:textColor="#030404" />
 
                 <Button
-                    android:layout_width="wrap_content"
+                    android:layout_width="200dp"
                     android:layout_height="wrap_content"
                     android:text="LOGIN"
                     android:layout_alignParentEnd="true"
                     android:background="@drawable/login_button_shape"
-                    android:layout_alignParentRight="true" />
+                    android:layout_alignParentRight="true"
+                    android:onClick="loginButton"/>
 
                 <Button
-                    android:layout_width="wrap_content"
+                    android:layout_width="200dp"
                     android:layout_height="wrap_content"
                     android:layout_alignParentEnd="true"
                     android:layout_alignParentRight="true"
                     android:layout_alignParentBottom="true"
                     android:layout_marginBottom="5dp"
                     android:background="@drawable/login_button_shape"
-                    android:text="SIGN UP" />
+                    android:text="SIGN UP"
+                    android:onClick="signUpButton"/>
 
             </RelativeLayout>
             <RelativeLayout
@@ -143,9 +147,9 @@
                 android:layout_marginBottom="25dp"
                 android:text="Also Login with"
                 android:textColor="#030404"
-                android:textSize="15sp"/>
+                android:textSize="15sp" />
 
-            <Button
+            <ImageView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_alignParentEnd="true"
@@ -153,9 +157,11 @@
                 android:layout_alignParentBottom="true"
                 android:layout_marginEnd="105dp"
                 android:layout_marginRight="105dp"
-                android:layout_marginBottom="10dp">
+                android:layout_marginBottom="10dp"
+                android:onClick="google"
+                android:src="@drawable/common_google_signin_btn_icon_light">
 
-            </Button>
+            </ImageView>
 
             <Button
                 android:layout_width="wrap_content"
@@ -165,7 +171,8 @@
                 android:layout_alignParentBottom="true"
                 android:layout_marginEnd="10dp"
                 android:layout_marginRight="10dp"
-                android:layout_marginBottom="11dp">
+                android:layout_marginBottom="11dp"
+                android:onClick="facebook">
 
             </Button>
 
