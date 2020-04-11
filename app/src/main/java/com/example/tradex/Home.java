@@ -25,12 +25,10 @@ public class Home extends AppCompatActivity {
                 switch (menuItem.getItemId())
                 {
                     case R.id.home:
-
                         fragment=new TradeXHomeView();
-
                         break;
                     case R.id.activity:
-
+                   fragment=new MarketFragment();
 
                         break;
                     case R.id.profile_pic:
